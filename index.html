@@ -14,11 +14,22 @@
 
 
 <body>
-    <h1>GET Form Experiment</h1>
-    <p>This form demonstrates browser behavior; it does not send a real message.</p>
-
-    <!-- form goes here -->
-
+    <form action="" method="get">
+        <h1 style="padding: 40px;">GET Form Experiment</h1>
+        <p style="padding-left: 40px;">This form demonstrates browser behavior; it does not send a real message.</p>
+        <br>
+        <p>
+            <label for="visitor-name" style="margin-left: 40px;">Your name</label>
+            <input id="visitor-name" name="visitorName" type="text" required>
+        </p>
+        <br>
+        <p>
+            <label for="visitor-message" style="margin-left: 40px;">Message</label>
+            <textarea id="visitor-message" name="message" rows="4"></textarea>
+        </p>
+        <br>
+        <button type="submit" style="margin-left: 40px;">Show values in the URL</button>
+    </form>
 </body>
 
 </html>
